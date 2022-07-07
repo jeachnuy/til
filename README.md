@@ -1,2 +1,2 @@
 # til
-java17
+* java17
