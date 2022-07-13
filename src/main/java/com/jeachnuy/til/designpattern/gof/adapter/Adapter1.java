@@ -1,4 +1,4 @@
-package com.jeachnuy.til.gof.adapter;
+package com.jeachnuy.til.designpattern.gof.adapter;
 
 public interface Adapter1 {
     interface Logger {

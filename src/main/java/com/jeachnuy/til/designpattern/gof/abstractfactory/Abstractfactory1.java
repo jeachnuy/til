@@ -1,4 +1,4 @@
-package com.jeachnuy.til.gof.abstractfactory;
+package com.jeachnuy.til.designpattern.gof.abstractfactory;
 
 public interface Abstractfactory1 {
     sealed interface Vehice permits Bus, Car {

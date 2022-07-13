@@ -1,4 +1,4 @@
-package com.jeachnuy.til.gof.abstractfactory;
+package com.jeachnuy.til.designpattern.gof.abstractfactory;
 
 import java.util.HashMap;
 import java.util.function.Supplier;
