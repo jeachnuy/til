@@ -7,9 +7,9 @@ import java.util.Arrays;
 public class Dispatcher {
 
     public static void main(String[] args) {
-        UserController userController = new UserController();
+        var userController = new UserController();
 
-        Method[] methods = userController.getClass().getDeclaredMethods();
+        var methods = userController.getClass().getDeclaredMethods();
         Arrays.stream(methods)
                 .map(Method::getName)
                 .forEach(System.out::println);
@@ -25,7 +25,6 @@ public class Dispatcher {
                     method.invoke(userController);
                 } catch (Exception e) {
                     e.printStackTrace();
-                    ;
                 }
             });
         });
@@ -34,7 +33,7 @@ public class Dispatcher {
 
         for (Method method:methods) {
             Annotation annotation = method.getDeclaredAnnotation(RequestMapping.class);
-            RequestMapping requestMapping = (RequestMapping) annotation;
+            var requestMapping = (RequestMapping) annotation;
             System.out.println(requestMapping.value());
 
             if(requestMapping.value().equals("/find")) {
